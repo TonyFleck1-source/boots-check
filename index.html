@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALS Bootsverleih - Bestätigung</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; }
+        .box { border: 1px solid #ccc; padding: 15px; border-radius: 8px; background: #f9f9f9; }
+        h2 { color: #e11d48; }
+        input[type="checkbox"] { transform: scale(1.5); margin-right: 10px; }
+        button { background: #000; color: #fff; padding: 15px; border: none; border-radius: 5px; width: 100%; font-size: 16px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Sicherheits-Check & Regeln</h2>
+        <p>Bitte bestätigen Sie die Einweisung kurz digital:</p>
+        
+        <form action="https://formspree.io/f/xvzdbyne" method="POST">
+            
+            <p>
+                <input type="checkbox" name="Einweisung_erhalten" required>
+                Ich habe die Einweisung (Motor, Wetter, Regeln) erhalten.
+            </p>
+            
+            <p>
+                <input type="checkbox" name="Gebuehren_akzeptiert" required>
+                Ich akzeptiere die Gebühren: <br>
+                <b>- WC-Verstopfung: 125 €</b><br>
+                <b>- Reinigung: ab 30 €</b>
+            </p>
+
+            <p>
+                <input type="checkbox" name="Haftung" required>
+                Ich hafte für Schäden am Boot und der Ausrüstung.
+            </p>
+
+            <button type="submit">Jetzt verbindlich bestätigen</button>
+        </form>
+    </div>
+</body>
+</html>
